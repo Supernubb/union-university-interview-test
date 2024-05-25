@@ -38,8 +38,10 @@ const styreneAWeb = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Учебные программы",
+  manifest: "/manifest.json",
+  title: "Специализированные дисциплины",
   description: "Тестовое задание для Union University",
+
 };
 
 export default function RootLayout({

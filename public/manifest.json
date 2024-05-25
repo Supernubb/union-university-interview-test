@@ -1,0 +1,16 @@
+{
+  "name": "PWA Специализированные дисциплины",
+  "short_name": "PWA СД",
+  "icons": [
+    {
+      "src": "/icons/icon_192x192.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ff3535",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

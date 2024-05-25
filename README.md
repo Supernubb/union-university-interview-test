@@ -1,4 +1,4 @@
-# Тестовое задание для слбеседования в Union University
+# Тестовое задание для собеседования в Union University
 
 ## [Ссылка](https://docs.google.com/document/d/1EwkeSiZDE5c3w-ao3Cg-k981Q_-2fCmdA8ccH4omRco/edit#heading=h.bnmhyns2ag2j)
 
