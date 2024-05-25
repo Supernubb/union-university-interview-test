@@ -1,0 +1,77 @@
+.text {
+  &__title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    margin-bottom: 34px;
+
+    @media (min-width: 1440px) {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+    }
+  }
+
+  &__cardTitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+
+    @media (min-width: 1440px) {
+      font-size: 26px;
+      line-height: 31px;
+    }
+  }
+
+  &__cardModuleTitle {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+
+    @media (min-width: 1440px) {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+
+  &__cardModuleList {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+
+    @media (min-width: 1440px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  &__noteTitle {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+
+    @media (min-width: 1440px) {
+      font-size: 36px;
+      line-height: 47px;
+    }
+  }
+
+  &__noteText {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+
+  &_darkGray {
+    color: $darkGray;
+  }
+
+  &_black {
+    color: $black;
+  }
+
+  &_white {
+    color: $white;
+  }
+}

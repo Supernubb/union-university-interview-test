@@ -1,0 +1,103 @@
+// Цвета
+$black: #000;
+$veryLightGray: #f7f7f7;
+$lightGray: #d9d9d9;
+$darkGray: #262626;
+$brightRed: #ff3535;
+$white: #fff;
+$blackOlive: #2d2c2a;
+
+// Анимации
+@keyframes blackToWhiteCr {
+  0% {
+    color: $black;
+  }
+  100% {
+    color: $white;
+  }
+}
+
+@keyframes whiteToBlackCr {
+  0% {
+    color: $white;
+  }
+  100% {
+    color: $black;
+  }
+}
+
+@keyframes lightGrayToWhiteBdCr {
+  0% {
+    background-color: $lightGray;
+  }
+  100% {
+    background-color: $white;
+  }
+}
+
+@keyframes whiteToLightGrayBdCr {
+  0% {
+    background-color: $white;
+  }
+  100% {
+    background-color: $lightGray;
+  }
+}
+
+@keyframes veryLightGrayToBrightRedBdCr {
+  0% {
+    background-color: $veryLightGray;
+  }
+  100% {
+    background-color: $brightRed;
+  }
+}
+
+@keyframes brightRedToVeryLightGrayBdCr {
+  0% {
+    background-color: $brightRed;
+  }
+  100% {
+    background-color: $veryLightGray;
+  }
+}
+
+@keyframes plusToLine {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes lineToPlus {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes expand {
+  0% {
+    max-height: 0;
+    opacity: 0;
+  }
+  100% {
+    max-height: 1000px;
+    opacity: 1;
+  }
+}
+
+@keyframes collapse {
+  0% {
+    max-height: 1000px;
+    opacity: 1;
+  }
+  100% {
+    max-height: 0;
+    opacity: 0;
+  }
+}

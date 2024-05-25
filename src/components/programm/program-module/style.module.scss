@@ -1,0 +1,127 @@
+.programModule {
+  display: grid;
+
+  @media (min-width: 1440px) {
+    grid-template-columns: auto 1fr;
+    gap: 0 82px;
+  }
+
+  &__title {
+    &_expand {
+      animation: blackToWhiteCr 1s forwards;
+    }
+
+    &_collapse {
+      animation: whiteToBlackCr 1s forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce), (min-width: 1440px) {
+      animation: none;
+    }
+  }
+
+  &__expander {
+    display: flex;
+    align-items: center;
+    height: 51px;
+    background-color: $veryLightGray;
+    cursor: pointer;
+    margin-bottom: 17px;
+
+    &_expand {
+      animation: veryLightGrayToBrightRedBdCr 1s forwards;
+    }
+
+    &_collapse {
+      animation: brightRedToVeryLightGrayBdCr 1s forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce), (min-width: 1440px) {
+      background-color: $white;
+      padding-top: 47px;
+      border-top: 2px solid $brightRed;
+      cursor: auto;
+      animation: none;
+    }
+  }
+
+  &__cross {
+    width: 18px;
+    height: 18px;
+    margin-left: 24px;
+    margin-right: 27px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__crossHorizontalLine,
+  &__crossVerticalLine {
+    position: absolute;
+    background-color: $lightGray;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+  }
+
+  &__crossVerticalLine {
+    &_expand {
+      animation: lightGrayToWhiteBdCr 1s forwards;
+    }
+
+    &_collapse {
+      animation: whiteToLightGrayBdCr 1s forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce), (min-width: 1440px) {
+      animation: none;
+    }
+  }
+
+  &__crossHorizontalLine {
+    rotate: 90deg;
+
+    &_expand {
+      animation: plusToLine 1s forwards, lightGrayToWhiteBdCr 1s forwards;
+    }
+
+    &_collapse {
+      animation: lineToPlus 1s forwards, whiteToLightGrayBdCr 1s forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce), (min-width: 1440px) {
+      animation: none;
+    }
+  }
+
+  &__skillList {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+
+    &_expand {
+      animation: expand 1s forwards;
+    }
+
+    &_collapse {
+      animation: collapse 1s forwards;
+    }
+
+    @media (prefers-reduced-motion: reduce), (min-width: 1440px) {
+      padding-top: 37px;
+      max-height: unset;
+      opacity: 1;
+      animation: none;
+    }
+  }
+
+  &__skill {
+    margin-bottom: 10px;
+    display: flex;
+  }
+}

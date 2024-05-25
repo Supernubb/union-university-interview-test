@@ -1,0 +1,23 @@
+.programCard {
+  margin-bottom: 27px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 62px;
+  }
+
+  &__title {
+    margin-bottom: 27px;
+
+    @media (min-width: 1440px) {
+      margin-bottom: 54px;
+    }
+  }
+
+  &__moduleList {
+    @media (min-width: 1440px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 46px;
+    }
+  }
+}
